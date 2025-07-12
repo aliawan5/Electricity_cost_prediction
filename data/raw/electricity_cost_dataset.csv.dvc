@@ -1,0 +1,5 @@
+outs:
+- md5: e18c8a2a4061be65eed9e90609dd480a
+  size: 453470
+  hash: md5
+  path: electricity_cost_dataset.csv
