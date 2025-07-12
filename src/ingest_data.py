@@ -6,7 +6,7 @@ import os
 class IngestData:
     def __init__(self, data_path : str):
         self.data_path = data_path
-        self.data
+        self.data = None
 
 
     def load_data(self) -> pd.DataFrame:
