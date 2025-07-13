@@ -36,8 +36,8 @@ jobs:
 
       - name: Commit updated files (model.pkl, dvc.lock)
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "aliawan05500@gmail.com"
+          git config --global user.name "Ali"
           git add dvc.lock models/model.pkl
           git commit -m "Auto update: retrained model and lock file" || echo "No changes to commit"
           git push origin main
