@@ -2,3 +2,6 @@
     remote = origin
 ['remote "origin"']
     url = https://dagshub.com/aliawan05500/Electricity_cost_prediction.dvc
+    auth = basic
+    user = aliawan05500
+    password = 42657284758988d2280d5130545e9da129e5800a
