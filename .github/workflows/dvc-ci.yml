@@ -24,9 +24,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Set up DVC
+      - name: Set up DVC and authenticate with DagsHub
         run: |
           pip install dvc
+          dvc remote modify origin auth basic
+          dvc remote modify origin user "${{ secrets.DAGSHUB_USER }}"
+          dvc remote modify origin password "${{ secrets.DAGSHUB_TOKEN }}"
           dvc pull
 
       - name: Reproduce pipeline
