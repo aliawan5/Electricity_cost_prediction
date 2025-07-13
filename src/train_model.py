@@ -28,7 +28,7 @@ class ModelTraining:
             dagshub.init(repo_owner='aliawan05500', repo_name='Electricity_cost_prediction', mlflow=True)
 
             with mlflow.start_run(run_name="RandomForest_Electricity"):
-                mlflow.set_tag("Test Run", "CI Pipeline test")
+                mlflow.set_tag("Test Run", "CI Pipeline test 1")
                 mlflow.log_param("model_type", "RandomForest")
                 mlflow.log_param("n_estimators", 100)
 
