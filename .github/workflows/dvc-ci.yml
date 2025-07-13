@@ -27,7 +27,6 @@ jobs:
       - name: Set up DVC
         run: |
           pip install dvc
-          dvc remote default origin --local
           dvc pull
 
       - name: Reproduce pipeline
