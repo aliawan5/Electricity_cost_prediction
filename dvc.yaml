@@ -1,0 +1,11 @@
+stages:
+  full_pipeline:
+    cmd: python main.py
+    deps:
+    - data/raw/electricity_cost_dataset.csv
+    - main.py
+    - src/ingest_data.py
+    - src/preprocess_data.py
+    - src/train_model.py
+    outs:
+    - model/model.pkl

@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  full_pipeline:
+    cmd: python main.py
+    deps:
+    - path: data/raw/electricity_cost_dataset.csv
+      hash: md5
+      md5: e18c8a2a4061be65eed9e90609dd480a
+      size: 453470
+    - path: main.py
+      hash: md5
+      md5: 6a7d713f62dcbe620c086bfaa6dbd94a
+      size: 666
+    - path: src/ingest_data.py
+      hash: md5
+      md5: 8593baa709bf709b552014fb3652fcbc
+      size: 696
+    - path: src/preprocess_data.py
+      hash: md5
+      md5: 088e69a4144766776bcb460b73eec94f
+      size: 671
+    - path: src/train_model.py
+      hash: md5
+      md5: 7d4a8bd8b7977a1ce59a38b656029f37
+      size: 1869
+    outs:
+    - path: model/model.pkl
+      hash: md5
+      md5: a0e5dd764ad6a72beba497cef75cd1c9
+      size: 72493969
